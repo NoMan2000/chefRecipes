@@ -1,0 +1,103 @@
+---
+driver:
+  name: vagrant
+  vm_hostname: 'postfixadmin.local'
+  network:
+  - ["forwarded_port", {guest: 80, host: 8080, auto_correct: true}]
+  - ["forwarded_port", {guest: 443, host: 8443, auto_correct: true}]
+
+provisioner:
+  require_chef_omnibus: latest
+
+platforms:
+# https://github.com/opscode-cookbooks/mysql/issues/228
+# - name: ubuntu-10.04
+#   run_list:
+#     - recipe[apt]
+- name: ubuntu-12.04
+  run_list:
+  - recipe[apt]
+- name: ubuntu-14.04
+  run_list:
+  - recipe[apt]
+- name: debian-6.0.10
+  run_list:
+  - recipe[apt]
+- name: debian-7.6
+  run_list:
+  - recipe[apt]
+- name: centos-5.10
+- name: centos-6.5
+- name: fedora-19
+- name: fedora-20
+
+suites:
+- name: mysql
+  run_list:
+  - recipe[postfixadmin_test::mysql]
+  attributes: {}
+- name: postgresql
+  excludes:
+  # https://github.com/hw-cookbooks/postgresql/issues/97
+  # https://github.com/hw-cookbooks/postgresql/issues/108
+  - ubuntu-12.04
+  - ubuntu-14.04
+  - debian-6.0.10
+  - debian-7.6
+  - debian-7-0-x64
+  run_list:
+  - recipe[postfixadmin_test::postgresql]
+  attributes: {}
+- name: without-webserver
+  run_list:
+  - recipe[postfixadmin_test]
+  attributes:
+    postfixadmin:
+      web_server: false
+- name: map_files
+  run_list:
+  - recipe[postfix-full]
+  - recipe[postfixadmin_test::map_files]
+  attributes: {}
+- name: lwrp
+  run_list:
+  - recipe[postfixadmin_test::lwrp]
+  attributes: { }
+- name: lwrp_ssl
+  run_list:
+  - recipe[postfixadmin_test::lwrp]
+  attributes:
+    postfixadmin:
+      ssl: true
+- name: lwrp_pgsql
+  run_list:
+  - recipe[postfixadmin_test::lwrp]
+  excludes:
+  # https://github.com/hw-cookbooks/postgresql/issues/97
+  # https://github.com/hw-cookbooks/postgresql/issues/108
+  - ubuntu-12.04
+  - ubuntu-14.04
+  - debian-6.0.10
+  - debian-7.6
+  - debian-7-0-x64
+  attributes:
+    postfixadmin:
+      database:
+        type: postgresql
+    postgresql:
+      password:
+        postgres: vagrant_postgres
+      ssl: true
+- name: lwrp_port
+  run_list:
+  - recipe[postfixadmin_test::lwrp]
+  attributes:
+    postfixadmin:
+      port: 8080
+- name: lwrp_port_ssl
+  run_list:
+  - recipe[postfixadmin_test::lwrp]
+  attributes:
+    postfixadmin:
+      port: 8443
+      ssl: true
