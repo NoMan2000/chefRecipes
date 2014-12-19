@@ -19,7 +19,7 @@ PHP-Addons:  Redis, intl, gettext, MySQLND, MySQLMS, etc/ (check)
 
 ! Anti-Virus software:  ClamAV (Check for others.)
 
-Monitoring:  Monit, Graphite, Syslog, Logrotate, logstash
+! Monitoring:  Monit, Graphite, Syslog, Logrotate, logstash
 
 SSL Services:  OpenSSL, OpenSSL Server, Stunnel
 
