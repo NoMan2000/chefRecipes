@@ -6,3 +6,4 @@ description      'Installs/Configures apache2'
 long_description 'Installs/Configures apache2'
 version          '0.1.0'
 
+# depends 'apache2'

@@ -1,17 +1,24 @@
 #Cookbook
 # Recipe:: default
 #copyright 2014, CellControl
-
+# include_recipe "apache2:apachecookbook"
 #First run apt-get update
 
-execute "apt-get update" do
-  command "apt-get update"
+if node["platform"] == "ubuntu"
+    execute "apt-get update" do
+      command "apt-get update"
+    end
 end
-
 # Install Apache
 # Package command, if it is installed it will install it.
 
-package "apache2" do
+apache_name = "httpd"
+
+if node["platform"] == "ubuntu"
+    apache_name == "apache2"
+end
+
+package apache_name do
   action :install
 end
 
@@ -28,3 +35,7 @@ end
 #     mode "0644"
 # end
 
+# template "/var/www/html/index.html" do
+#     source "index.html.erb"
+#     mode "0644"
+# end
