@@ -21,9 +21,10 @@ PHP-Addons:  Redis, intl, gettext, MySQLND, MySQLMS, etc/ (check)
 
 ! Monitoring:  Monit, Graphite, Syslog, Logrotate, logstash
 
-SSL Services:  OpenSSL, OpenSSL Server, Stunnel
+# SSL Services:  OpenSSL, OpenSSL Server, Stunnel
+# Could not install SSL Services.
 
-Java:  JavaSDK and Java. (From Oracle).  Tomcat.
+! Java:  JavaSDK and Java. (From Oracle).  Tomcat.
 
 NodeJS:  Connect it to C9.io.
 
