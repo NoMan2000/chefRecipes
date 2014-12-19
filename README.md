@@ -37,6 +37,8 @@ LoadBalancing:
 
 RabbitMQ
 
+Jenkins
+
 Upstart (replacement for init)
 
 Python: pyenv
@@ -44,3 +46,13 @@ Python: pyenv
 Ruby: rvm
 
 (Chef:  Chef-client cookbook)
+
+Sqlite
+
+Mongodb
+
+ElasticSearch
+
+knife cookbook site download chef-client
+
+knife cookbook site install chef-client
