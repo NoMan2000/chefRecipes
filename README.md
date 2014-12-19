@@ -26,7 +26,8 @@ PHP-Addons:  Redis, intl, gettext, MySQLND, MySQLMS, etc/ (check)
 
 ! Java:  JavaSDK and Java. (From Oracle).  Tomcat.
 
-NodeJS:  Connect it to C9.io.
+#NodeJS:  Connect it to C9.io.
+# Unable to install NodeJS.
 
 Bower / Grunt / Gulp
 
@@ -34,9 +35,9 @@ Git Repo:  Git and GitLab.
 
 Redis:  Redis
 
-LoadBalancing:
+# LoadBalancing: HaProxy
 
-RabbitMQ
+Queue Managers:  RabbitMQ, Resque
 
 Jenkins
 
