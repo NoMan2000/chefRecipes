@@ -29,6 +29,18 @@ chefRecipes
 
 ## Redis:  as Redis2
 
+## RabbitMQ
+
+## LoadBalancing: HaProxy, Squid, Varnish
+
+## Jenkins
+
+## Python: pyenv
+
+## Ruby: rvm
+
+## Git Repo:  Git and GitLab.
+
 Apache Variables (Check conf to add environment variables based on dev/staging/production)
 
 Todos:
@@ -42,21 +54,14 @@ Todos:
 > Connect NodeJS to C9.io.
 >  Bower / Grunt / Gulp
 
-Git Repo:  Git and GitLab.
 
 
 
-LoadBalancing:
 
-RabbitMQ
 
-Jenkins
 
-Upstart (replacement for init)
 
-Python: pyenv
 
-Ruby: rvm
 
 (Chef:  Chef-client cookbook)
 
