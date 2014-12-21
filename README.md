@@ -25,6 +25,9 @@ chefRecipes
 
 ## Java:  JavaSDK and Java. (From Oracle).  Tomcat.
 
+## NodeJS:  
+
+
 Apache Variables (Check conf to add environment variables based on dev/staging/production)
 
 Todos:
@@ -35,12 +38,8 @@ Todos:
 > ! PHP
 > ! Check for Installing latest version of package and software.
 >  OpenSSL Server, 
-
-
-
-NodeJS:  Connect it to C9.io.
-
-Bower / Grunt / Gulp
+> Connect NodeJS to C9.io.
+>  Bower / Grunt / Gulp
 
 Git Repo:  Git and GitLab.
 
