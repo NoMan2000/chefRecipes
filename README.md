@@ -27,6 +27,7 @@ chefRecipes
 
 ## NodeJS:  
 
+## Redis:  as Redis2
 
 Apache Variables (Check conf to add environment variables based on dev/staging/production)
 
@@ -43,7 +44,7 @@ Todos:
 
 Git Repo:  Git and GitLab.
 
-Redis:  Redis
+
 
 LoadBalancing:
 
