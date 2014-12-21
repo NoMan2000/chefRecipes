@@ -1,29 +1,42 @@
 chefRecipes
 ===========
 
-Some chef recipes for automation of basic configuration.
+# Done
 
-Over time, the following recipes need to be added:
+## Composer.
 
-! MailServer configuration.  (dovecot-postfix)
+## Anti-Virus software:  ClamAV (Check for others.)
 
-! LAMP:  Apache (2.4.x), PHP (5.6.x), MySQL (5.6 | 5.7)
+## Monitoring:  Monit, Graphite, Syslog, Logrotate, logstash
 
-Apache add-ons: (Check)
+## MailServer configuration.  (dovecot-postfix)
+
+## LAMP:  Apache (2.4.x), PHP (5.6.x), MySQL (5.6 | 5.7)
+
+##! Apache add-ons: (Check)
+
+## Composer.
+
+##! Anti-Virus software:  ClamAV (Check for others.)
+
+##! Monitoring:  Monit, Graphite, Syslog, Logrotate, logstash
+
+##! SSL Services:  OpenSSL, Stunnel
+
+## Java:  JavaSDK and Java. (From Oracle).  Tomcat.
 
 Apache Variables (Check conf to add environment variables based on dev/staging/production)
 
-PHP-Addons:  Redis, intl, gettext, MySQLND, MySQLMS, etc/ (check)
+Todos:
+=============
 
-! Composer.
+> ! PHP-Addons:  Redis, intl, gettext, MySQLND, MySQLMS, etc/ (check)
+>
+> ! PHP
+> ! Check for Installing latest version of package and software.
+>  OpenSSL Server, 
 
-! Anti-Virus software:  ClamAV (Check for others.)
 
-! Monitoring:  Monit, Graphite, Syslog, Logrotate, logstash
-
-SSL Services:  OpenSSL, OpenSSL Server, Stunnel
-
-Java:  JavaSDK and Java. (From Oracle).  Tomcat.
 
 NodeJS:  Connect it to C9.io.
 
