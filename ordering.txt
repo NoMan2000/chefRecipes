@@ -1,0 +1,3 @@
+build-essential::default php5_ppa::from_ondrej
+
+dpkg --get-selections > list.txt
