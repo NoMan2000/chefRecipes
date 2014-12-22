@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: apache2
+# Cookbook Name:: apache2_user
 # Definition:: apache_conf
 #
 # Copyright 2008-2013, Opscode, Inc.

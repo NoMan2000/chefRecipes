@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: apache2
+# Cookbook Name:: apache2_user
 # Definition:: apache_module
 #
 # Copyright 2008-2013, Opscode, Inc.
@@ -18,7 +18,7 @@
 #
 
 define :apache_module, :enable => true, :conf => false do
-  include_recipe 'apache2::default'
+  include_recipe 'apache2_user::default'
 
   params[:filename]    = params[:filename] || "mod_#{params[:name]}.so"
   params[:module_path] = params[:module_path] || "#{node['apache']['libexec_dir']}/#{params[:filename]}"

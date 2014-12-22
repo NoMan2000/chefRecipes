@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: apache2
+# Cookbook Name:: apache2_user
 # Definition:: apache_mod
 #
 # Copyright 2008-20013, Opscode, Inc.
