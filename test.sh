@@ -7,6 +7,16 @@
 # Special files, see http://flurdy.com/docs/postfix/:
 # http://blogging.dragon.org.uk/installing-a-mailserver-on-ubuntu-14-04-lts-part-2/
 
+# sudo apt-get build-dep apache2-dev 
+# sudo apt-get build-dep php5
+# sudo apt-get build-dep mysql-5.6
+# sudo apt-get install mysql-server-5.6 mysql-client-core-5.6 mysql-client-5.6
+
+
+sudo apt-get install php5-dbg php5-dev php5-gd php5-gmp php5-json php5-odbc php5-readline php5-sqlite php5-xmlrp
+c php5-xsl php5-intl php5-mysqlnd php5-memcached php5-mcrypt php5-mongo php5-my
+sqlnd-ms php5-oauth php5-redis php5-svn php5-xdebug php5-xhprof
+
 sudo apt-get install shorewall shorewall-doc courier-base courier-authdaemon courier-authlib-mysql \
 			courier-imap courier-imap-ssl courier-ssl amavisd-new spamc postgrey \
 			libsasl2-modules libsasl2-modules-sql libgsasl7 \ 
@@ -70,6 +80,7 @@ wget http://us2.php.net/distributions/php-5.6.4.tar.gz
 # sudo ln -s /usr/include /opt/include
 # sudo ln -s /usr/lib64 /opt/lib
 
+#https://www.virgohacks.net/install-apache-2-4-mysql-5-6-php-5-5-source-ubuntu-14-04/
 
 ./configure --prefix=/usr                    \
             --sysconfdir=/etc                \

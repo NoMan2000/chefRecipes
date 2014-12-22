@@ -54,6 +54,7 @@ Todos:
 
 > ! PHP-Addons:  Redis, intl, gettext, MySQLND, MySQLMS, etc/ (check)
 >
+> Automate running composer, (rm composer.lock, sudo composer install)
 > ! PHP
 > ! Check for Installing latest version of package and software.
 >  OpenSSL Server, 
