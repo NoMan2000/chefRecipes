@@ -59,7 +59,3 @@ Todos:
 >  OpenSSL Server, 
 > Connect NodeJS to C9.io.
 >  Bower / Grunt / Gulp
-
-knife cookbook site download chef-client
-
-knife cookbook site install chef-client
