@@ -36,4 +36,4 @@ default['varnish']['log_daemon'] = true
 default['varnish']['use_default_repo'] = true
 
 default['varnish']['backend_host'] = 'localhost'
-default['varnish']['backend_port'] = '8080'
+default['varnish']['backend_port'] = '80'
