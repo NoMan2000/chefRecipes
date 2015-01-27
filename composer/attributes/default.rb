@@ -23,3 +23,10 @@ end
 default['composer']['global_configs'] = {}
 default['composer']['home_dir'] = nil
 default['composer']['php_recipe'] = 'php::default'
+
+composer_project "/srv/www/cellcontrol/current" do
+    dev false
+    quiet true
+    prefer_dist false
+    action :install
+end
